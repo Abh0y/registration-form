@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/User');
 const bcrypt = require('bcryptjs');
-const cookieParser = require('cookie-parser');
 
 router.get("/", (req, res) => {
     res.render("index");
